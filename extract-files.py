@@ -34,6 +34,18 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libmegface.so', 'libfacedet.so')
         .replace_needed('libMegviiFacepp-0.5.2.so', 'libFaceDetectpp-0.5.2.so')
         .replace_needed('megviifacepp_0_5_2_model', 'facedetectpp_0_5_2_model'),
+    ('vendor/lib64/libalAILDC.so', 'vendor/lib64/libalLDC.so', 'vendor/lib64/libalhLDC.so'): blob_fixup()
+        .clear_symbol_version('AHardwareBuffer_allocate')
+        .clear_symbol_version('AHardwareBuffer_describe')
+        .clear_symbol_version('AHardwareBuffer_lock')
+        .clear_symbol_version('AHardwareBuffer_release')
+        .clear_symbol_version('AHardwareBuffer_unlock'),
+    ('vendor/lib64/libVDSuperPhotoAPI.so', 'vendor/lib64/libarcsoft_dualcam_refocus_front.so', 'vendor/lib64/libarcsoft_dualcam_refocus_rear_t.so', 'vendor/lib64/libarcsoft_dualcam_refocus_rear_w.so'): blob_fixup()
+        .clear_symbol_version('remote_handle_close')
+        .clear_symbol_version('remote_handle_invoke')
+        .clear_symbol_version('remote_handle_open')
+        .clear_symbol_version('remote_register_buf_attr')
+        .clear_symbol_version('remote_register_buf'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
