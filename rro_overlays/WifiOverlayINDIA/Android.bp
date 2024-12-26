@@ -1,4 +1,4 @@
 runtime_resource_overlay {
     name: "WifiOverlayINDIA",
-    product_specific: true
+    product_specific: true,
 }

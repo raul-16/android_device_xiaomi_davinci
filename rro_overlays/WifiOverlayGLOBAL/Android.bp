@@ -1,4 +1,4 @@
 runtime_resource_overlay {
     name: "WifiOverlayGLOBAL",
-    product_specific: true
+    product_specific: true,
 }
