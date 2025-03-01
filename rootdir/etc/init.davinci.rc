@@ -9,7 +9,7 @@ on property:ro.boot.hwc=INDIA
     setprop bluetooth.device.default_name "Redmi K20"
 
 on property:ro.boot.hwversion=*
-    setprop ro.boot.hardware.revision ${ro.boot.hwversion}
+    setprop ro.boot.hardware.revision ${ro.boot.hwc}_${ro.boot.hwlevel}_${ro.boot.hwversion}
 
 service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
     override
