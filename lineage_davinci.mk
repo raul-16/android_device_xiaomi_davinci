@@ -27,5 +27,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="davinci-user 11 RKQ1.200826.002 V12.1.4.0.RFJMIXM release-keys" \
     BuildFingerprint=Xiaomi/davinci/davinci:11/RKQ1.200826.002/V12.1.4.0.RFJMIXM:user/release-keys \
     DeviceProduct=davinci \
-    SystemDevice=davinci \
     SystemName=davinci
