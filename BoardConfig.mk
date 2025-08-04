@@ -50,7 +50,7 @@ TARGET_SCREEN_DENSITY := 440
 TARGET_USES_FOD_ZPOS := true
 
 # Vendor security patch level
-VENDOR_SECURITY_PATCH := 2025-02-01
+VENDOR_SECURITY_PATCH := 2025-06-01
 
 # Inherit from proprietary files
 include vendor/xiaomi/davinci/BoardConfigVendor.mk
